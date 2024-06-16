@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Summative - Group 15</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -39,6 +39,20 @@
           Please enter a valid email address.
         </span>
         <hr />
+
+        <label for="phone"><b>Phone Number </b></label>
+        <input
+          type="tel"
+          placeholder="Enter Phone Number"
+          name="phone"
+          id="phone"
+          required
+        />
+        <span class="error-message" id="emailError">
+          Please enter a phone number.
+        </span>
+        <hr />
+
         <button type="submit" class="registerbtn">Register</button>
       </div>
     </form>
