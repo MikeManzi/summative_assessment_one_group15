@@ -51,8 +51,18 @@
         <span class="error-message" id="phoneError">
           Please enter a valid phone number in format (123) 456-7890.
         </span>
-        <hr />
-
+        <div>
+          <label for="event_date"><b>Event date</b></label>
+          <input
+            type="date"
+            placeholder="Enter event date format MM/DD/YYYY"
+            name="event_date"
+            id="event_date_input"
+            required
+          />
+          <span class="error-message" id="event_date_error"></span>
+          <hr />
+        </div>
         <button type="submit" class="registerbtn">Register</button>
       </div>
     </form>
