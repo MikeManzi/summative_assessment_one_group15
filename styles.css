@@ -49,3 +49,20 @@ input:focus {
   border-color: #feb47b;
   outline: none;
 }
+
+.registerbtn {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.registerbtn:hover {
+  background-color: #feb47b;
+}
