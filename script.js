@@ -13,3 +13,19 @@ document.getElementById('name').addEventListener('input', function () {
         nameError.style.display = 'none';
     }
 });
+
+document.getElementById('email').addEventListener('input', function () {
+    var email = document.getElementById('email').value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var emailError = document.getElementById('emailError');
+  
+    if (!emailRegex.test(email)) {
+        document.getElementById('email').classList.add('invalid');
+        document.getElementById('email').classList.remove('valid');
+        emailError.style.display = 'block';
+    } else {
+        document.getElementById('email').classList.remove('invalid');
+        document.getElementById('email').classList.add('valid');
+        emailError.style.display = 'none';
+    }
+  });
