@@ -43,3 +43,9 @@ input {
   background: #f9f9f9;
   transition: background 0.3s, border-color 0.3s;
 }
+
+input:focus {
+  background-color: #fff;
+  border-color: #feb47b;
+  outline: none;
+}
