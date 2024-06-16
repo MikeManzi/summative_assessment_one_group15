@@ -16,3 +16,9 @@ body {
   width: 100%;
   max-width: 400px;
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
