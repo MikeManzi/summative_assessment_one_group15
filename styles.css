@@ -50,6 +50,12 @@ input:focus {
   outline: none;
 }
 
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 30px;
+}
+
+
 .registerbtn {
   background-color: #ff7e5f;
   color: white;

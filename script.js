@@ -47,7 +47,7 @@ document.getElementById("phone").addEventListener("input", function () {
 });
 
 
-document.getElementById("event_date_input".addEventListener("input", function(){
+document.getElementById("event_date_input".addEventListener("input", function () {
   var event_date = document.getElementById("event_date_input").value;
   /**
    * validations for the date frormat.
@@ -69,4 +69,4 @@ document.getElementById("event_date_input".addEventListener("input", function(){
     document.getElementById("event_date_input").classList.add("valid");
     event_dateError.style.display = "none";
   }
-}))
+}));
