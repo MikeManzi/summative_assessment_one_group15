@@ -47,7 +47,7 @@ document.getElementById("phone").addEventListener("input", function () {
 });
 
 
-document.getElementById("event_date_input".addEventListener("input", function () {
+document.getElementById("event_date_input").addEventListener("input", function () {
   var event_date = document.getElementById("event_date_input").value;
   /**
    * validations for the date frormat.
@@ -69,4 +69,22 @@ document.getElementById("event_date_input".addEventListener("input", function ()
     document.getElementById("event_date_input").classList.add("valid");
     event_dateError.style.display = "none";
   }
-}));
+});
+
+
+document.getElementById("event_tickets_input").addEventListener("input", function () {
+  console.log("typing..")
+  var tickets = document.getElementById("event_tickets_input").value;
+  var ticketsRegex =  /^(10|[1-9])$/;
+  var ticketsError = document.getElementById("event_tickets_error");
+
+  if (!ticketsRegex.test(tickets)) {
+    document.getElementById("event_tickets_input").classList.add("invalid");
+    document.getElementById("event_tickets_input").classList.remove("valid");
+    ticketsError.style.display = "block";
+  } else {
+    document.getElementById("event_tickets_input").classList.remove("invalid");
+    document.getElementById("event_tickets_input").classList.add("valid");
+    ticketsError.style.display = "none";
+  }
+});
