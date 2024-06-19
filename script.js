@@ -1,8 +1,10 @@
+// Event Listener for Name Validation (on input)
 document.getElementById("name").addEventListener("input", function () {
   var name = document.getElementById("name").value;
+  //This regex ensures the name field only accepts letters (uppercase and lowercase) and spaces 
   var nameRegex = /^[A-Za-z\s]+$/;
   var nameError = document.getElementById("nameError");
-
+  // Check if name matches the regular expression
   if (!nameRegex.test(name)) {
     document.getElementById("name").classList.add("invalid");
     document.getElementById("name").classList.remove("valid");
@@ -14,8 +16,15 @@ document.getElementById("name").addEventListener("input", function () {
   }
 });
 
+// Event Listener for Email Validation (on input)
 document.getElementById("email").addEventListener("input", function () {
   var email = document.getElementById("email").value;
+  // Regular Expression for Email Validation \(common email format\)
+  // This regex matches a common email format consisting of\:
+  // \- Characters before "@" \(username/alias\)
+  // \- "@" symbol separating the username and domain
+  // \- Characters after "@" \(domain name\)
+  // \- A dot \(\.\) followed by characters \(top\-level domain\)
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   var emailError = document.getElementById("emailError");
 
@@ -30,11 +39,13 @@ document.getElementById("email").addEventListener("input", function () {
   }
 });
 
+
 document.getElementById("phone").addEventListener("input", function () {
   var phone = document.getElementById("phone").value;
   var phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
   var phoneError = document.getElementById("phoneError");
 
+  //Check if email matches the regular expression
   if (!phoneRegex.test(phone)) {
     document.getElementById("phone").classList.add("invalid");
     document.getElementById("phone").classList.remove("valid");
@@ -71,13 +82,16 @@ document.getElementById("event_date_input").addEventListener("input", function (
   }
 });
 
-
+// Event Listener for Tickets Validation (on input)
 document.getElementById("event_tickets_input").addEventListener("input", function () {
-  console.log("typing..")
   var tickets = document.getElementById("event_tickets_input").value;
+
+  // Regular Expression for Tickets Validation (number between 1 and 10)
+  // This regex ensures the ticket number is between 10 and 1:
   var ticketsRegex =  /^(10|[1-9])$/;
   var ticketsError = document.getElementById("event_tickets_error");
 
+  // Check if ticket number matches the regular expression
   if (!ticketsRegex.test(tickets)) {
     document.getElementById("event_tickets_input").classList.add("invalid");
     document.getElementById("event_tickets_input").classList.remove("valid");
