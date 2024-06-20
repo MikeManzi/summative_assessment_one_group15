@@ -102,3 +102,8 @@ document.getElementById("event_tickets_input").addEventListener("input", functio
     ticketsError.style.display = "none";
   }
 });
+
+document.getElementById("registerForm").addEventListener("submit", event => {
+  event.preventDefault();
+  event.target.innerHTML = "<h1>Thank you for registering!</h1>";
+})
