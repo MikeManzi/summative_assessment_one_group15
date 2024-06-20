@@ -4,6 +4,7 @@ This repository contains code for an Event Registration Form built using HTML, C
 
 ## Table of Contents
 - [Demo](https://summative-g15.netlify.app/)
+- [Report](https://drive.google.com/file/d/1E7FluqoiaN5fucxHys0XjubBlLzEwUWT/view?usp=drive_link)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
