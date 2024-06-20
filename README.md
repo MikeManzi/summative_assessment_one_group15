@@ -3,7 +3,7 @@
 This repository contains code for an Event Registration Form built using HTML, CSS, and JavaScript. The form includes fields for collecting user information required to register for a fictional event.
 
 ## Table of Contents
-- [Demo](#demo)
+- [Demo](https://summative-g15.netlify.app/)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,7 +11,7 @@ This repository contains code for an Event Registration Form built using HTML, C
 - [License](#license)
 
 ## Demo
-You can see a live demo of the form [here](#). *(Link to your live demo if available)*
+You can see a live demo of the form [here](https://summative-g15.netlify.app/).
 
 ## Features
 - **Name:** Accepts letters and spaces only.
